@@ -1,3 +1,5 @@
+from __future__ import print_function, division, absolute_import
+
 import torch
 from torch.autograd import Variable
 from torch.utils import data
