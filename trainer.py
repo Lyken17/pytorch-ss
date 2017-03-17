@@ -20,7 +20,7 @@ for epoch in range(80):
     for i, (images, labels) in enumerate(trainloader):
         if torch.cuda.is_available():
             images = Variable(images.cuda(0))
-            labels = Variable(images.cuda(0))
+            labels = Variable(labels.cuda(0))
         else:
             images = Variable(images)
             labels = Variable(labels)
